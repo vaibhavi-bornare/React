@@ -1,15 +1,15 @@
 
 import './App.css'
+import Jsx from './component/Jsx';
 
 
 function App() {
 
-var isswitch=true;
-
   return (
-    <div>
-      hello
-    </div>
+ <div>
+ 
+  <Jsx/>
+ </div>
   );
 }
 

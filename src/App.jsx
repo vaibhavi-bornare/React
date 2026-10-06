@@ -5,6 +5,7 @@ import './App.css'
 import Classcom from "./component/Class.jsx";
 // import Lyf from "./component/Lyf.jsx";
 import Usestate from './component/Usestate.jsx';
+import Task from './component/Task.jsx';
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
   {/* <Demo/> */}
   {/* <Classcom/> */}
   {/* <Lyf/> */}
-  hello
-  <Usestate/>
+  
+  <Task/>
+  {/* <Usestate/> */}
  </div>
   )
 }

@@ -7,33 +7,39 @@ import './App.css'
 // import Usestate from './component/Usestate.jsx';
 // import Task from './component/Task.jsx';
 // import Form from './component/Form.jsx';
- import Ch1 from './component/props/Ch1.jsx';
- import Onchange from './component/Event/Onchange.jsx';
- import Onmouse from './component/Event/Onmouse.jsx';
-import Onkey from './component/Event/Onkey.jsx';
-import Form from '.component/Event/Form.jsx';
+import Ch1 from './component/props/Ch1.jsx';
+//  import Onchange from './component/Event/Onchange.jsx';
+//  import Onmouse from './component/Event/Onmouse.jsx';
+// import Onkey from './component/Event/Onkey.jsx';
+// import Form from '.component/Event/Form.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./Pages/Contact.jsx";
+import Home from "./Pages/Home.jsx";
+import About from "./Pages/About.jsx";
+import Blog from "./Pages/Blog.jsx";
+import Navbar from './component/Navbar.jsx';
+import AnaimlsName from './Pages/AnaimlsName.jsx';
+
 
 function App() {
-  // const content={
-  //   data:"abc",
-  //   color:"red"
-  // }
+
 
   return (
- <div>
-  {/* <Demo/> */}
-  {/* <Classcom/> */}
-  {/* <Lyf/> */}
   
-  {/* <Task/> */}
-  {/* <Usestate/> */}
-  {/* <Form/> */}
-  {/* <Ch1 data={content}/> */}
-  {/* < Onchange/> */}
-  {/* <Onmouse/> */}
-  {/* <Onkey/> */}
-  <Form/>
- </div>
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/blog/:id" element={<Blog/>}/>
+          <Route path="/AnimalsName" element={<AnaimlsName/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
+
+ 
   )
 }
 

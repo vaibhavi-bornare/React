@@ -1,11 +1,11 @@
 import React from 'react'
 import Ch3 from "./Ch3.jsx";
-export default function Ch1(props){
-    console.log("hello from ch2",props)
+export default function Ch1(){
+    console.log("hello from ch2",)
     return(
         <div>
-        Ch2
-        <Ch3 data={props.data}/>
+        <h2>ch2</h2>
+        <Ch3/>
         </div>
     )
 }

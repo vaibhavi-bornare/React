@@ -1,10 +1,13 @@
 import React from 'react'
-export default function Ch1(props){
-    console.log("hello from ch3",props)
+import { useContext } from 'react';
+import { UseContext } from '../UseContext';
+export default function Ch3(){
+    const data=useContext(UseContext);
+ 
+    console.log("data from ch3",data);
     return(
         <div>
-        Ch3
-        <h3 style={{color:props.data.color}}>{props.data.data}</h3>
+      <h1>Ch3</h1>       
         </div>
     )
 }

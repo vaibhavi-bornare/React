@@ -8,7 +8,7 @@ import './App.css'
 // import Task from './component/Task.jsx';
 // import Form from './component/Form.jsx';
 import Ch1 from './component/props/Ch1.jsx';
-//  import Onchange from './component/Event/Onchange.jsx';
+ import Onchange from './component/Event/Onchange.jsx';
 //  import Onmouse from './component/Event/Onmouse.jsx';
 // import Onkey from './component/Event/Onkey.jsx';
 // import Form from '.component/Event/Form.jsx';
@@ -19,15 +19,22 @@ import About from "./Pages/About.jsx";
 import Blog from "./Pages/Blog.jsx";
 import Navbar from './component/Navbar.jsx';
 import AnaimlsName from './Pages/AnaimlsName.jsx';
+import { UseContext } from './component/UseContext.jsx';
 
 
 function App() {
 
 
+  const Student={
+    name:"vaibhavi",
+    Age:19,
+    college:"ABC collge"
+  }
   return (
+   
   
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -36,7 +43,12 @@ function App() {
           <Route path="/blog/:id" element={<Blog/>}/>
           <Route path="/AnimalsName" element={<AnaimlsName/>}/>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+ <UseContext provider value={{Student}}>
+<Ch1/>
+ </UseContext>
+
+
     </div>
 
  

@@ -9,6 +9,7 @@ import './App.css'
 // import Form from './component/Form.jsx';
 // import Ch1 from './component/props/Ch1.jsx';
  import Onchange from './component/Event/Onchange.jsx';
+ import Onsubmit from './component/Event/OnSubmit.jsx';
 //  import Onmouse from './component/Event/Onmouse.jsx';
 // import Onkey from './component/Event/Onkey.jsx';
 // import Form from '.component/Event/Form.jsx';
@@ -49,7 +50,8 @@ function App() {
 {/* <Ch1/> */}
  {/* </UseContext> */}
  {/* <Onclick/> */}
- <Onchange/>
+ {/* <Onchange/> */}
+ <Onsubmit/>
 
 
     </div>

@@ -48,7 +48,8 @@ function App() {
  {/* <UseContext provider value={{Student}}> */}
 {/* <Ch1/> */}
  {/* </UseContext> */}
- <Onclick/>
+ {/* <Onclick/> */}
+ <Onchange/>
 
 
     </div>

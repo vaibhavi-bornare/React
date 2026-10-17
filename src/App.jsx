@@ -10,7 +10,7 @@ import './App.css'
 // import Ch1 from './component/props/Ch1.jsx';
  import Onchange from './component/Event/Onchange.jsx';
  import Onsubmit from './component/Event/OnSubmit.jsx';
-//  import Onmouse from './component/Event/Onmouse.jsx';
+import Onmouse from './component/Event/Onmouse.jsx';
 // import Onkey from './component/Event/Onkey.jsx';
 // import Form from '.component/Event/Form.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -51,7 +51,8 @@ function App() {
  {/* </UseContext> */}
  {/* <Onclick/> */}
  {/* <Onchange/> */}
- <Onsubmit/>
+ {/* <Onsubmit/> */}
+ <Onmouse/>
 
 
     </div>

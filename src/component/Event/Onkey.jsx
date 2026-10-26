@@ -6,7 +6,8 @@ console.log(`key pressed : ${e.key}`);
     return(
        <div>
         Onkey
-        <input onKeyDown={demo}/>
+        <input onKeyDown
+    ={demo}/>
        </div>
     )
 }

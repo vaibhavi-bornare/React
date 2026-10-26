@@ -26,7 +26,8 @@ import { Component } from 'react';
 // import { lazy, Suspense } from 'react';
 // const Lazy=lazy(()=>import("./component/Lazy"));
 import Usememo from './component/Usememo.jsx';
-import Controlled from './component/Controlled.jsx';
+import Uncontrolled from './component/Uncontrolled.jsx';
+// import Controlled from './component/Controlled.jsx';
 function App() {
 
 
@@ -60,7 +61,8 @@ function App() {
  {/* <Suspense fallback={<p>Loading...</p>}>
 <Lazy/>
  </Suspense> */}
-<Controlled/>
+{/* <Controlled/> */}
+<Uncontrolled/>
     </div>
 
  

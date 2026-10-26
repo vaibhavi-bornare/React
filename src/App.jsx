@@ -13,17 +13,20 @@ import './App.css'
 import Onmouse from './component/Event/Onmouse.jsx';
 import Onkey from './component/Event/Onkey.jsx';
 // import Form from '.component/Event/Form.jsx';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Onclick from './component/Event/Onclick.jsx';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Onclick from './component/Event/Onclick.jsx';
+// import { Suspense } from 'react';
 // import Contact from "./Pages/Contact.jsx";
 // import Home from "./Pages/Home.jsx";
 // import About from "./Pages/About.jsx";
 // import Blog from "./Pages/Blog.jsx";
-// import Navbar from './component/Navbar.jsx';
 // import AnaimlsName from './Pages/AnaimlsName.jsx';
 // import { UseContext } from './component/UseContext.jsx';
-
-
+import { Component } from 'react';
+// import { lazy, Suspense } from 'react';
+// const Lazy=lazy(()=>import("./component/Lazy"));
+import Usememo from './component/Usememo.jsx';
+import Controlled from './component/Controlled.jsx';
 function App() {
 
 
@@ -53,9 +56,11 @@ function App() {
  {/* <Onchange/> */}
  {/* <Onsubmit/> */}
  {/* <Onmouse/> */}
- <Onkey/>
-
-
+ {/* <Onkey/> */}
+ {/* <Suspense fallback={<p>Loading...</p>}>
+<Lazy/>
+ </Suspense> */}
+<Controlled/>
     </div>
 
  

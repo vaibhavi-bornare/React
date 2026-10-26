@@ -26,8 +26,10 @@ import { Component } from 'react';
 // import { lazy, Suspense } from 'react';
 // const Lazy=lazy(()=>import("./component/Lazy"));
 import Usememo from './component/Usememo.jsx';
-import Uncontrolled from './component/Uncontrolled.jsx';
+// import Uncontrolled from './component/Uncontrolled.jsx';
 // import Controlled from './component/Controlled.jsx';
+import Hoc from './component/HOC/Hoc.jsx';
+
 function App() {
 
 
@@ -62,7 +64,8 @@ function App() {
 <Lazy/>
  </Suspense> */}
 {/* <Controlled/> */}
-<Uncontrolled/>
+{/* <Uncontrolled/> */}
+<Hoc/>
     </div>
 
  

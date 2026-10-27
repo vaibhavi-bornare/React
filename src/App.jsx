@@ -28,7 +28,9 @@ import { Component } from 'react';
 import Usememo from './component/Usememo.jsx';
 // import Uncontrolled from './component/Uncontrolled.jsx';
 // import Controlled from './component/Controlled.jsx';
-import Hoc from './component/HOC/Hoc.jsx';
+// import Hoc from './component/HOC/Hoc.jsx';
+// import Usereducer from './component/Usereducer.jsx';
+import Usereducer2 from './component/Usereducer2.jsx';
 
 function App() {
 
@@ -65,7 +67,9 @@ function App() {
  </Suspense> */}
 {/* <Controlled/> */}
 {/* <Uncontrolled/> */}
-<Hoc/>
+{/* <Hoc/> */}
+{/* <Usereducer/> */}
+<Usereducer2/> 
     </div>
 
  
